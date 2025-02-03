@@ -7,8 +7,8 @@ import State from "./State/State";
 export default function App() {
   return (
     <div>
-      <Component/>
-      {/* <State/> */}
+      {/* <Component/> */}
+      <State/>
     </div>
   );
 }
