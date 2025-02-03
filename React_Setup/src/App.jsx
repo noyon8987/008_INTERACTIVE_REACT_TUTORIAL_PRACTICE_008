@@ -1,10 +1,14 @@
-import React from 'react'
-import './style.css'
+import React from "react";
+import "./style.css";
+import Component from "./components/Component";
+import State from "./State/State";
+
 
 export default function App() {
   return (
     <div>
-      <h1>HI, <br /> Shahadat Hosen Noyon</h1>
+      <Component/>
+      {/* <State/> */}
     </div>
-  )
+  );
 }

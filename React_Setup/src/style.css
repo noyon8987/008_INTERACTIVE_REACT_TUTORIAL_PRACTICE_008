@@ -9,19 +9,3 @@ html , body{
     height: auto;
     scroll-behavior: smooth;
 }
-
-body {
-    background-color: gray;
-    color: white;
-    text-align: center;
-}
-
-h1 {
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-20%, -50%);
-    font-size: 7vw;
-    text-transform: uppercase;
-    cursor: pointer;
-}
