@@ -6,6 +6,8 @@ export default function Note_Add() {
     { id: 1, title: "Note-01" },
     { id: 2, title: "Note-02" },
   ]);
+  const [editNote, setEditNote] = useState(false);
+  const [editableNote, setEditableNote] = useState(null);
 
   function noteChangeHandler(e) {
     setNoteTitle(e.target.value);
@@ -16,17 +18,39 @@ export default function Note_Add() {
     if (noteTitle.trim() === "") {
       return alert(`Please write a valid note`);
     }
+    editNote ? updatedNote() : createNote();
+  }
+
+  const createNote = () => {
     const newNote = {
       id: Date.now() + "",
       title: noteTitle,
     };
     setNotes([...notes, newNote]);
     setNoteTitle("");
-  }
+  };
+
+  const updatedNote = () => {
+    const updatedNotes = notes.map((item) => {
+      if (item.id === editableNote.id) {
+        return { ...item, title: noteTitle };
+      }
+      return item;
+    });
+    setNotes(updatedNotes);
+    setEditNote(false);
+    setNoteTitle("");
+  };
 
   function removeNoteHandler(noteId) {
     const updateNotes = notes.filter((item) => item.id !== noteId);
     setNotes(updateNotes);
+  }
+
+  function editNoteHandler(note) {
+    setEditNote(true);
+    setEditableNote(note);
+    setNoteTitle(note.title);
   }
 
   return (
@@ -34,7 +58,7 @@ export default function Note_Add() {
       <form onSubmit={noteSubmitHandler}>
         <h2>Write Your Notes</h2>
         <input type="text" value={noteTitle} onChange={noteChangeHandler} />
-        <button type="submit">Add Note</button>
+        <button type="submit">{editNote ? "Update Note" : "Add Note"}</button>
       </form>
       <br />
       <div className="note-list">
@@ -45,7 +69,7 @@ export default function Note_Add() {
             <>
               <li>
                 <span>{note.title}</span>
-                <button>Edit</button>
+                <button onClick={() => editNoteHandler(note)}>Edit</button>
                 <button onClick={() => removeNoteHandler(note.id)}>
                   Delete
                 </button>
