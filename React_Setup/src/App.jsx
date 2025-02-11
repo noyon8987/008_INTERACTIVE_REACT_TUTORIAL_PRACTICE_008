@@ -4,6 +4,7 @@ import "./style.css";
 import Component from "./components/Component";
 import State from "./State/State";
 import Note_APP from "./Note Take App/Note_APP";
+import Student_App from "./Student Attendence App/Student_App";
 
 
 export default function App() {
@@ -11,7 +12,8 @@ export default function App() {
     <div>
       {/* <Component/> */}
       {/* <State/> */}
-      <Note_APP/>
+      {/* <Note_APP/> */}
+      <Student_App/>
     </div>
   );
 }
