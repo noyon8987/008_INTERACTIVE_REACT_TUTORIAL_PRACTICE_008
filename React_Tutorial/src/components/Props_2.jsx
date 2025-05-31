@@ -1,5 +1,5 @@
 import "../style.css";
-import BioData_1 from "./BioData_1";
+import Props_1 from "./Props_1";
 
 const bioDataInformation = [
   {
@@ -49,11 +49,11 @@ const bioDataInformation = [
   },
 ];
 
-export default function BioData_2() {
+export default function Props_2() {
   return (
     <div className="Bio_Data">
       {bioDataInformation.map((bioData) => (
-        <BioData_1
+        <Props_1
           name={bioData.name}
           age={bioData.age}
           email={bioData.email}

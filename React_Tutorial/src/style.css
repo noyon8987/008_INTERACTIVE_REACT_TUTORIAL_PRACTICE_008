@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 10px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -8,6 +8,14 @@ html , body{
     width: 100%;
     height: auto;
     scroll-behavior: smooth;
+}
+
+span {
+    display: block;
+    text-align: center;
+    margin-top: 40vh;
+    font-size: 5vw;
+    font-weight: bold;
 }
 
 .Bio_Data {

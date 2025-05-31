@@ -1,6 +1,6 @@
 import "../style.css"
 
-export default function BioData(props) {
+export default function Props_1(props) {
   return (
     <>
       <div className="bioData">
