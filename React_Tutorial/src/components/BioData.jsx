@@ -1,8 +1,9 @@
 import "../style.css";
-import Props_1 from "./Props_1";
+import BioData01 from "./BioData01";
 
-const bioDataInformation = [
+const BioDatas = [
   {
+    id:1,
     name: "Noyon",
     age: 22,
     email: "noyon@gmail.com",
@@ -12,6 +13,7 @@ const bioDataInformation = [
     interests: ["Football", "Travaling", "Cricket", "Gerdening"],
   },
   {
+    id:2,
     name: "Asif",
     age: 32,
     email: "asif@gmail.com",
@@ -21,6 +23,7 @@ const bioDataInformation = [
     interests: ["Football", "Travaling", "Cricket", "Gerdening"],
   },
   {
+    id:3,
     name: "Asif",
     age: 32,
     email: "asif@gmail.com",
@@ -30,6 +33,7 @@ const bioDataInformation = [
     interests: ["Football", "Travaling", "Cricket", "Gerdening"],
   },
   {
+    id:4,
     name: "Asif",
     age: 32,
     email: "asif@gmail.com",
@@ -39,6 +43,7 @@ const bioDataInformation = [
     interests: ["Football", "Travaling", "Cricket", "Gerdening"],
   },
   {
+    id:5,
     name: "Asif",
     age: 32,
     email: "asif@gmail.com",
@@ -49,11 +54,11 @@ const bioDataInformation = [
   },
 ];
 
-export default function Props_2() {
+export default function BioData() {
   return (
     <div className="Bio_Data">
-      {bioDataInformation.map((bioData) => (
-        <Props_1
+      {BioDatas.map((bioData) => (
+        <BioData01 key={bioData.id}
           name={bioData.name}
           age={bioData.age}
           email={bioData.email}

@@ -1,13 +1,14 @@
 import "../style.css"
 
-export default function Props_1(props) {
+export default function BioData01(props) {
+  const {name, email} = props;
   return (
     <>
       <div className="bioData">
-        <h2>Bio Data of {props.name}</h2>
+        <h2>Bio Data of {name}</h2>
         <br />
         <div className="personal_information">
-          <p>Email : {props.email}</p>
+          <p>Email : {email}</p>
           <p>Age: {props.age}</p>
           <p>Phone: {props.phone}</p>
           <p>Github: {props.github}</p>
@@ -16,7 +17,7 @@ export default function Props_1(props) {
         <h2>My Skills</h2>
         <div className="my-skills">
           <ul>
-            {props?.skills.map((skill) => (
+            {props?.skills?.map((skill) => (
               <li key={skill}>{skill}</li>
             ))}
           </ul>

@@ -1,6 +1,6 @@
 import "./style.css";
 
-// import Props_2 from "./components/Props_2";
+// import BioData from "./components/BioData";
 // import Conditional_Randering from "./components/Conditional_Randering";
 // import ForEach from "./components/ForEach";
 // import Map from "./components/Map";
@@ -11,7 +11,7 @@ import "./style.css";
 export default function App() {
   return (
     <>
-      {/* <Props_2/> */}
+      {/* <BioData /> */}
       {/* <Conditional_Randering/> */}
       {/* <ForEach/> */}
       {/* <Map/> */}
