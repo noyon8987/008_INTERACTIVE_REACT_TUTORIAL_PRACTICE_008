@@ -10,14 +10,6 @@ html , body{
     scroll-behavior: smooth;
 }
 
-span {
-    display: block;
-    text-align: center;
-    margin-top: 40vh;
-    font-size: 5vw;
-    font-weight: bold;
-}
-
 .Bio_Data {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -33,4 +25,8 @@ span {
 
 .bioData li {
     list-style: none;
+}
+
+li {
+    margin-left: 20px;
 }

@@ -1,4 +1,5 @@
 import "./style.css";
+import UseEffect from "./useeffect_hooks/UseEffect";
 
 // import BioData from "./components/BioData";
 // import Conditional_Randering from "./components/Conditional_Randering";
@@ -18,6 +19,7 @@ export default function App() {
       {/* <Filter/> */}
       {/* <Count_State/> */}
       {/* <Array_State/> */}
+      <UseEffect/>
     </>
   );
 }
