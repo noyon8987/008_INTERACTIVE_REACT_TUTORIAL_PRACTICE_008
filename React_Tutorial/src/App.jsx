@@ -1,5 +1,4 @@
 import "./style.css";
-import UseEffect from "./useeffect_hooks/UseEffect";
 
 // import BioData from "./components/BioData";
 // import Conditional_Randering from "./components/Conditional_Randering";
@@ -8,6 +7,8 @@ import UseEffect from "./useeffect_hooks/UseEffect";
 // import Filter from "./components/Filter";
 // import Count_State from "./state_components/Count_State";
 // import Array_State from "./state_components/Array_State";
+// import UseEffect from "./useeffect_hooks/UseEffect";
+import MainComponent from "./useReduce_Context/components/MainComponent";
 
 export default function App() {
   return (
@@ -19,7 +20,8 @@ export default function App() {
       {/* <Filter/> */}
       {/* <Count_State/> */}
       {/* <Array_State/> */}
-      <UseEffect/>
+      {/* <UseEffect/> */}
+      <MainComponent />
     </>
   );
 }

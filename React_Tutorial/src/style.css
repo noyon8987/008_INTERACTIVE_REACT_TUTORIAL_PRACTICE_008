@@ -30,3 +30,9 @@ html , body{
 li {
     margin-left: 20px;
 }
+
+.AllTodos {
+    display: flex;
+    margin-top: -20px;
+    margin-left: 2px;
+}
