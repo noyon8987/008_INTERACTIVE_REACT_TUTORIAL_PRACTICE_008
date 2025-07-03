@@ -14,6 +14,10 @@ export default function useSmallSize(onSmallDeviceThrsed) {
   useEffect(() => {
     checkScreenSize();
     window.addEventListener("resize", checkScreenSize);
+    //clean up eventlistener
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+    };
   }, [checkScreenSize]);
 
   return onSmallSize;
