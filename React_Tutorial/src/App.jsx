@@ -8,7 +8,9 @@ import "./style.css";
 // import Count_State from "./state_components/Count_State";
 // import Array_State from "./state_components/Array_State";
 // import UseEffect from "./useeffect_hooks/UseEffect";
-import MainComponent from "./useReduce_Context/components/MainComponent";
+// import MainComponent from "./useReduce_Context/components/MainComponent";
+// import Counter from "./useMemo_useCallback/Counter";
+import Layout from "./layout/Layout";
 
 export default function App() {
   return (
@@ -21,7 +23,9 @@ export default function App() {
       {/* <Count_State/> */}
       {/* <Array_State/> */}
       {/* <UseEffect/> */}
-      <MainComponent />
+      {/* <MainComponent /> */}
+      {/* <Counter/> */}
+      <Layout/>
     </>
   );
 }
