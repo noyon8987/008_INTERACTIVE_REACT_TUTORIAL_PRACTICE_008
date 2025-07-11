@@ -10,7 +10,8 @@ import "./style.css";
 // import UseEffect from "./useeffect_hooks/UseEffect";
 // import MainComponent from "./useReduce_Context/components/MainComponent";
 // import Counter from "./useMemo_useCallback/Counter";
-import Layout from "./layout/Layout";
+// import Layout from "./layout/Layout";
+import MainApp from "./practices/app/MainApp";
 
 export default function App() {
   return (
@@ -25,7 +26,12 @@ export default function App() {
       {/* <UseEffect/> */}
       {/* <MainComponent /> */}
       {/* <Counter/> */}
-      <Layout/>
+      {/* <Layout/> */}
+
+      {/* practice tutorial */}
+      <MainApp />
+      {/* practice tutorial */}
+
     </>
   );
 }
