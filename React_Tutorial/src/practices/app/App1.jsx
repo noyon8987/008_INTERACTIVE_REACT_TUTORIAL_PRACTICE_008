@@ -1,9 +1,9 @@
-import Test from "../components/Test";
+import Test1 from "../components/App1/Test1";
 
-export default function PracticeApp() {
+export default function App1() {
   return (
     <>
-      <Test
+      <Test1
         as="p"
         num={1}
         value="This is Value"
@@ -12,7 +12,7 @@ export default function PracticeApp() {
         }}
       >
         This is P Tag.
-      </Test>
+      </Test1>
     </>
   );
 }
