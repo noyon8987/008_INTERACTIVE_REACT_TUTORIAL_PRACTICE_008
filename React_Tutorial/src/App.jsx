@@ -1,5 +1,7 @@
 import "./style.css";
 
+import TodoApp from "./useReduce_&_context_api/TodoApp";
+
 // import BioData from "./components/BioData";
 // import Conditional_Randering from "./components/Conditional_Randering";
 // import ForEach from "./components/ForEach";
@@ -11,7 +13,7 @@ import "./style.css";
 // import MainComponent from "./useReduce_Context/components/MainComponent";
 // import Counter from "./useMemo_useCallback/Counter";
 // import Layout from "./layout/Layout";
-import MainApp from "./practices/app/MainApp";
+// import MainApp from "./practices/app/MainApp";
 
 export default function App() {
   return (
@@ -27,9 +29,10 @@ export default function App() {
       {/* <MainComponent /> */}
       {/* <Counter/> */}
       {/* <Layout/> */}
+      <TodoApp />
 
       {/* practice tutorial */}
-      <MainApp />
+      {/* <MainApp /> */}
       {/* practice tutorial */}
 
     </>
